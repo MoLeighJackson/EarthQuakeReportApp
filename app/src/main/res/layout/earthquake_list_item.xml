@@ -7,12 +7,28 @@
     android:padding="18dp">
 
     <TextView
-        android:id="@+id/place"
+        android:id="@+id/location_offset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="30km S of" />
+
+    <TextView
+        android:id="@+id/primary_location"
+        android:paddingBottom="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="San Francisco, CA" />
+
+    <TextView
+        android:id="@+id/mag"
         android:layout_width="1dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_marginLeft="10dp"
         android:textSize="18dp"
-        tools:text="Indonesia"/>
+        tools:text="5.6"/>
 
     <TextView
         android:id="@+id/date"
@@ -23,11 +39,11 @@
         tools:text="July 28, 2018 "/>
 
     <TextView
-        android:id="@+id/mag"
+        android:id="@+id/time"
         android:layout_width="1dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textSize="18dp"
-        tools:text="5.6"/>
+        tools:text="5:00 PM"/>
 
 </LinearLayout>

@@ -36,6 +36,7 @@ public class QueryUtils {
      */
     public static ArrayList<Earthquake> extractEarthquakes() {
 
+
         // Create an empty ArrayList that we can start adding earthquakes to
         ArrayList<Earthquake> earthquakes = new ArrayList<>();
 
@@ -60,11 +61,12 @@ public class QueryUtils {
                 // Extract “time” for time
                 String magnitude = properties.getString("mag");
                 String location = properties.getString("place");
-                String time = properties.getString("time");
+                long time = properties.getLong("time");
+                // extract the value for the key "time"
+
 
                 // Create Earthquake java object from magnitude, location, and time
-                Earthquake earthquake = new Earthquake(magnitude, location, time);
-
+                Earthquake earthquake = new Earthquake(location, magnitude, time);
                 // Add earthquake to list of earthquakes
                 earthquakes.add(earthquake);
 
